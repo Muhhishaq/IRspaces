@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #ff0000;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            color: #ffffff;
+        }
+
+        .sidebar button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 4px;
+            background-color: #ffffff;
+            color: #ff0000;
+            cursor: pointer;
+        }
+
+        .sidebar button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <button onclick="location.href='#rubiks'">Rubik's Cube</button>
+        <button onclick="location.href='#calendar'">Calendar</button>
+        <button onclick="location.href='#profile'">Profile</button>
+        <button onclick="location.href='#lesson'">Lesson</button>
+        <button onclick="location.href='#homework'">Homework</button>
+        <button onclick="window.location.href='login.html';">Logout</button>
+    </aside>
+    <main class="content">
+        <h1>Welcome to the Main Page</h1>
+        <p>Select an option from the menu.</p>
+    </main>
+</body>
+</html>
